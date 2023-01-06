@@ -497,7 +497,6 @@ export class ClassGenerator {
 
             //writer.write('(<any>Object).assign(this, <any> props);\n');
             //writer.write(`\nconsole.log("constructor:", props);`);
-            writer.write(`this["@class"] = "${this.classPrefix}${c.name}";\n`);
             const codeLines = [];
             classDef.getPropertiesAndConstructorParameters().forEach((prop) => {
                 const propName = prop.name.replace('?', '');
