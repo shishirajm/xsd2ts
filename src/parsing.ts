@@ -86,6 +86,9 @@ export function getFieldType(type: string, defNs: string): string {
         date: "Date",
         base64binary: "string",
         boolean: "boolean",
+        short: "number,
+        guid: "string",
+        unsignedbyte: "number"
     }
 
     if (defNs && !/:/.test(type)){
